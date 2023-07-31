@@ -12,5 +12,12 @@ code {
     monospace;
 }
 
+#root {
+	height: 100vh;
+	width: 100%;
+	background-color: #FFFFFF;
+}
+
+
 @import url(./styles/fonts/fonts.css);
 @import url(./styles/normalize.css);
