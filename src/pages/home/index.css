@@ -28,7 +28,7 @@
 	padding: 20px 0;
 	border: none;
 	color: #FFFFFF;
-	background: #3A4574;
+	background-color: #3A4574;
 	font-family: 'Poppins';
   font-style: normal;
 	font-weight: 500;
@@ -36,6 +36,12 @@
   text-align: center;
 	line-height: 20px;
 	cursor: pointer;
+}
+
+.header__button:hover {
+  color: #3A4574 ;
+	background-color: #FFFFFF;
+  transition: background-color 0.2s ease-out, color 0.2s ease-out;
 }
 
 .header__contacts {
@@ -84,6 +90,11 @@
 
 .header__links-item {
   margin-left: 8px;
+}
+
+.header__links-item:hover {
+  opacity: 0.6;
+  transition: opacity 0.3s;
 }
 
 .header__links-item:first-of-type {
