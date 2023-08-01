@@ -3,7 +3,75 @@
 }
 
 .header {
+  background-image: url(./images/headerBackground.png);
+  background-size: cover;
+  padding: 20px;
+  display: flexbox;
+  flex-direction: column;
 
+}
+
+.header__logo {
+  width: 220px;
+  height: 45px;
+}
+
+.header__button-wrapper {
+  display: flex;	
+  justify-content: center;
+}
+
+.header__button {
+  margin: 0 auto;
+  width: 162px;
+	padding: 20px 0;
+	border: none;
+	color: #FFFFFF;
+	background: #3A4574;
+	font-family: 'Poppins';
+  font-style: normal;
+	font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+	line-height: 20px;
+	cursor: pointer;
+}
+
+.header__hours {
+  margin: 120px auto 24px;
+  font-family: 'Poppins';
+  font-style: normal;
+	font-weight: 500;
+  font-size: 16px;
+  color: #FFFFFF;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.header__title {
+  margin: 0 auto 40px;
+  font-family: 'Poppins';
+  font-style: normal;
+	font-weight: 700;
+  font-size: 24px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.header__links {
+  padding: 0;
+  margin: 20px 0 120px;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+.header__links-item {
+  margin-left: 8px;
+}
+
+.header__links-item:first-of-type {
+  margin-left: 0;
 }
 
 .content {
