@@ -1,0 +1,52 @@
+.menu-card {
+  margin: 0 0 20px;
+  font-family: 'Poppins';
+  font-style: normal;
+  line-height: 32px;
+  color: #000000;
+  border-bottom: 1px solid #E7E7E7;
+}
+
+.menu-card__title {
+  margin: 0;
+  font-weight: 600;
+  font-size: 24px;
+  text-align: center;
+}
+
+.menu-card__container {
+  display:flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  
+}
+
+.menu-card__item {
+  margin: 10px 0 20px;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+}
+
+
+
+.menu-card__separator {
+  height: 5px;
+  width: 39px;
+  margin: 0 12px 10px;
+  align-self: center;
+}
+
+@media screen and (min-width: 1160px) {
+  .menu-card__item {
+    font-size: 18px;
+  }
+
+  .menu-card__container {
+    flex-direction: row;
+  }
+
+  .menu-card__title {
+    text-align: left;
+  }
+}

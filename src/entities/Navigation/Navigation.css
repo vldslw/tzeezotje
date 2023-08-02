@@ -1,0 +1,77 @@
+.header__nav {
+  display: flex;
+  justify-content: end;
+}
+
+
+.header__nav-burger {
+  margin: 13px 0 0 0;
+  width: 25px;
+  height: 25px;
+  cursor: pointer; 
+  border: none; 
+  padding: 0; 
+  background-image: url(./burgerMenu.svg);
+  background-color: transparent;
+}
+
+
+.header__nav-burger_close {
+  background-image: url(./burgerMenuClose.svg);
+}
+
+.header__nav-burger:hover {
+  opacity: 0.6;
+  transition: opacity 0.3s;
+}
+
+.header__nav-link {
+  display: none;
+  margin: 16px 0 16px 45px;
+  text-align: center;
+  font-family: 'Poppins';
+  font-style: normal;
+	font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.header__nav-link:first-of-type {
+	font-weight: 500;
+}
+
+.header__nav-link:hover {
+  opacity: 0.6;
+  transition: opacity 0.3s;
+}
+
+.header__nav-contacts {
+  display: none;
+  margin: 16px 0 16px 157px;
+}
+
+.header__nav-contacts-tel {
+  margin: 0 0 0 11px;
+  font-family: 'Poppins';
+  font-style: normal;
+	font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
+@media screen and (min-width: 1160px) {
+  .header__nav-burger {
+    display: none;
+  }
+
+  .header__nav-link {
+    display: block;
+  }
+
+  .header__nav-contacts {
+    display: flex;
+  } 
+}

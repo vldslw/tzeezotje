@@ -1,0 +1,57 @@
+.swiper__buttons {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  left: 0;
+  top: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.swiper__button {
+  height: 70px;
+  width: 70px;
+  cursor: pointer; 
+  border: none; 
+  background-color: transparent;
+  padding: 0;
+}
+
+.swiper__button_prev {
+  background-image: url(./arrow-up.svg);
+}
+
+.swiper__button_next {
+  background-image: url(./arrow-down.svg);
+}
+
+@media screen and (min-width: 1160px) {
+  .swiper__button_prev {
+    margin-left: 40px;
+  }
+  
+  .swiper__button_next {
+    margin-right: 40px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .swiper__button_prev {
+    margin-left: 80px;
+  }
+  
+  .swiper__button_next {
+    margin-right: 80px;
+  }
+
+}
+
+@media screen and (min-width: 1900px) {
+  .swiper__button_prev {
+    margin-left: 375px;
+  }
+  
+  .swiper__button_next {
+    margin-right: 375px;
+  }
+}
