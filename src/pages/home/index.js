@@ -6,6 +6,9 @@ import facebookButton from './icons/fbButton.svg';
 import instagramButton from './icons/igButton.svg';
 import twitterButton from './icons/twButton.svg';
 import youtubeButton from './icons/ytButton.svg';
+import MenuBackground from './images/menuBackgroundImg.svg';
+import menuPhoto1 from './images/menuPhoto1.png';
+import menuPhoto2 from './images/menuPhoto2.png';
 import { useState } from "react"; 
 import { NavMenu } from '../../entities/Navigation/Navigation';
 import { MenuPopup } from '../../entities/MenuPopup/MenuPopup';
@@ -15,6 +18,7 @@ import { ReviewCard } from '../../entities/ReviewCard/ReviewCard';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
 import { SwiperNavButtons } from '../../entities/SwiperNavButtons/SwiperNavButtons';
+import { MenuCard } from '../../entities/MenuCard/MenuCard';
 import 'swiper/css/bundle';
 
 export const HomePage = () => {
@@ -86,6 +90,39 @@ export const HomePage = () => {
 			</header>
 			<main className="content">
 			  <section className="menu" aria-label="Menu section">
+					<div className="menu__cards">
+						<MenuCard 
+							title={'Woensdag 12/01'} 
+							firstItem={'Salade met Serrano'} 
+							secondItem={'Steak Tartaar'}
+						/>
+						<MenuCard 
+							title={'Donderdag 13/01'} 
+							firstItem={'Toast Roquefort'} 
+							secondItem={'Penne met Kip en Prei'}
+						/>
+						<MenuCard 
+							title={'Vrijdag 14/01'}	
+							firstItem={'Verrassing van de Chef'} 
+							secondItem={'Penne met Kip en Prei'}
+						/>
+						<MenuCard 
+							title={'Vrijdag 15/01'} 
+							firstItem={'Verrassing van de Chef'} 
+							secondItem={'Penne met Kip en Prei'}
+						/>
+						<MenuCard 
+							title={'Vrijdag 16/01'} 
+							firstItem={'Verrassing van de Chef'} 
+							secondItem={'Penne met Kip en Prei'}
+						/>
+					</div>
+					<div className="menu__images">
+						<div className="menu__image-background">
+							<img src={menuPhoto1} className="menu__image-photo menu__image-photo_first" alt="" />
+							<img src={menuPhoto2} className="menu__image-photo menu__image-photo_second" alt="" />
+						</div>
+					</div>
 				</section>
 				<section className="clients" aria-label="Client reviews section">
 					<Swiper

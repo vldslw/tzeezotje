@@ -1,0 +1,52 @@
+.menu-card {
+  font-family: 'Poppins';
+  font-style: normal;
+  line-height: 32px;
+  color: #000000;
+  border-bottom: 1px solid #E7E7E7;
+}
+
+.menu-card__title {
+  font-weight: 600;
+  font-size: 24px;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-card__title {
+    text-align: left;
+  }
+}
+
+.menu-card__container {
+  display:flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  
+}
+
+@media screen and (min-width: 768px) {
+  .menu-card__container {
+    flex-direction: row;
+  }
+}
+
+.menu-card__item {
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-card__item {
+    font-size: 18px;
+  }
+}
+
+.menu-card__separator {
+  height: 5px;
+  width: 39px;
+  margin: 0 12px;
+  align-self: center;
+}
+
