@@ -1,0 +1,133 @@
+.popup {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  background-color: rgba(0,0,0,0.5);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s, visibility 0s 0.3s;
+}
+
+.popup_open {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.popup__container {
+  align-self: center;
+  position: relative;
+  width: 282px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .popup__container {
+    width: 430px;
+  }
+}
+
+.popup__close-button {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: -36px;
+  right: 0;
+
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background-color: rgba(0,0,0,0);
+  background-image: url(./closePopupButton.svg);
+  background-size: cover;
+}
+
+.popup__close-button:hover {
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+@media screen and (min-width: 768px) {
+  .popup__close-button {
+    width: 32px;
+    height: 32px;
+    top: -40px;
+    right: -40px;
+  }
+}
+
+.popup__title {
+  margin: 25px 22px 75px;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 900;
+  color: #000000;
+}
+
+@media screen and (min-width: 768px) {
+  .popup__title {
+    margin: 34px 36px 54px;
+    font-size: 24px;
+    line-height: 23px;
+  }
+}
+
+.popup__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.popup__submit-button {
+  margin: 25px 22px;
+  padding: 14px 0 14px;
+  font-size: 14px;
+  line-height: 17px;
+  border: none;
+  color: #FFFFFF;
+	background-color: #3A4574;
+	font-family: 'Poppins';
+  font-style: normal;
+	font-weight: 500;
+  text-align: center;
+	cursor: pointer;
+}
+
+.popup__submit-button:hover {
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+@media screen and (min-width: 768px) {
+  .popup__submit-button {
+    margin: 36px;
+    padding: 14px 0 18px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.popup__input {
+  margin: 0 22px 30px;
+  padding: 0 0 9px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #000000;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+
+@media screen and (min-width: 768px) {
+  .popup__input {
+    margin: 0 36px 30px;
+  }
+}

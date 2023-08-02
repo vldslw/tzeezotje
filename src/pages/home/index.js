@@ -9,14 +9,25 @@ import youtubeButton from './icons/ytButton.svg';
 import { useState } from "react"; 
 import { Navigation } from '../../entities/Navigation/Navigation';
 import { MenuPopup } from '../../entities/MenuPopup/MenuPopup';
+import { FormPopup } from '../../entities/FormPopup/FormPopup'
 
 export const HomePage = () => {
 
 	const [isMenuPopupOpen, setMenuPopupOpen] = useState(false); 
+	const [isFormPopupOpen, setFormPopupOpen] = useState(false);
 
   function handleMenuClick() { 
     setMenuPopupOpen(!isMenuPopupOpen); 
   } 
+
+	function handleFormClick() {
+		setFormPopupOpen(true);
+	}
+
+	function closeFormPopup() {
+		setFormPopupOpen(false);
+	}
+
 
 	return (
 		<div className="page">
@@ -38,8 +49,17 @@ export const HomePage = () => {
 				<p className="header__hours">Open everyday 6AM - 9PM</p>
 				<h1 className="header__title">A bad day with lunch is better than a good day without it.</h1>
 				<div class="header__button-wrapper">
-				  <button className="header__button">Reserve a table</button>
+				  <button 
+						className="header__button"
+						onClick={handleFormClick}
+					>
+						Reserve a table
+					</button>
         </div>
+				<FormPopup 
+					isOpen={isFormPopupOpen}
+					onClose={closeFormPopup}
+				/>
 				<ul className="header__links">
 					<li className="header__links-item"><a href="https://tzeezotje.be/" className="header__link"><img src={facebookButton} className="header__link-img" alt="Facebook"/></a></li>
 					<li className="header__links-item"><a href="https://tzeezotje.be/" className="header__link"><img src={instagramButton} className="header__link-img" alt="Instagram"/></a></li>
