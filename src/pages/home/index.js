@@ -10,6 +10,7 @@ import { useState } from "react";
 import { Navigation } from '../../entities/Navigation/Navigation';
 import { MenuPopup } from '../../entities/MenuPopup/MenuPopup';
 import { FormPopup } from '../../entities/FormPopup/FormPopup'
+import { submitReserve } from '../../shared/api/submitreserve';
 
 export const HomePage = () => {
 
@@ -28,6 +29,16 @@ export const HomePage = () => {
 		setFormPopupOpen(false);
 	}
 
+	function onSubmit({ name, email, size }) {
+		return submitReserve({ name, email, size })
+		.then((res) => {
+			setFormPopupOpen(false);
+      return res;
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+	}
 
 	return (
 		<div className="page">
@@ -48,7 +59,7 @@ export const HomePage = () => {
 				</div>
 				<p className="header__hours">Open everyday 6AM - 9PM</p>
 				<h1 className="header__title">A bad day with lunch is better than a good day without it.</h1>
-				<div class="header__button-wrapper">
+				<div className="header__button-wrapper">
 				  <button 
 						className="header__button"
 						onClick={handleFormClick}
@@ -59,6 +70,7 @@ export const HomePage = () => {
 				<FormPopup 
 					isOpen={isFormPopupOpen}
 					onClose={closeFormPopup}
+					onSubmit={onSubmit}
 				/>
 				<ul className="header__links">
 					<li className="header__links-item"><a href="https://tzeezotje.be/" className="header__link"><img src={facebookButton} className="header__link-img" alt="Facebook"/></a></li>

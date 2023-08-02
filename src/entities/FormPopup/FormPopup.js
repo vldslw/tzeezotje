@@ -4,10 +4,8 @@ import { useState } from "react";
 export const FormPopup = ({ isOpen, onClose, onSubmit }) => {
 
   const [name, setName] = useState('');
-  const [size, setSize] = useState('');
   const [email, setEmail] = useState('');
-
-  
+  const [size, setSize] = useState('');
 
   function handleNameChange(e) {
     setName(e.target.value);
@@ -21,6 +19,11 @@ export const FormPopup = ({ isOpen, onClose, onSubmit }) => {
     setEmail(e.target.value);
   }
 
+  function handleSubmit(e) {
+    e.preventDefault();
+		onSubmit({ name, email, size });
+  }
+
   return (
     <div className={`popup ${isOpen ? "popup_open" : ""}`}>
       <div className="popup__container">
@@ -32,7 +35,7 @@ export const FormPopup = ({ isOpen, onClose, onSubmit }) => {
         <h2 className="popup__title">Reserve a table</h2>
         <form
           className="popup__form"
-          onSubmit={onSubmit}
+          onSubmit={handleSubmit}
           name="order"
         > 
           <input
@@ -63,6 +66,8 @@ export const FormPopup = ({ isOpen, onClose, onSubmit }) => {
             name="size"
             className="popup__input"
             placeholder="Reservation Size"
+            min="1" 
+            max="12"
             required
            />
           <button type="submit" className="popup__submit-button">
