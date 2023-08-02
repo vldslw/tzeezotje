@@ -33,7 +33,7 @@
 .menu-card__separator {
   height: 5px;
   width: 39px;
-  margin: 0 12px;
+  margin: 0 12px 10px;
   align-self: center;
 }
 
