@@ -1,11 +1,9 @@
 import './index.css';
-import { Link } from 'react-router-dom'; 
 import logo from './images/logo.svg';
 import facebookButton from './icons/fbButton.svg';
 import instagramButton from './icons/igButton.svg';
 import twitterButton from './icons/twButton.svg';
 import youtubeButton from './icons/ytButton.svg';
-import MenuBackground from './images/menuBackgroundImg.svg';
 import menuPhoto1 from './images/menuPhoto1.png';
 import menuPhoto2 from './images/menuPhoto2.png';
 import { useState } from "react"; 
