@@ -1,4 +1,5 @@
 .menu-card {
+  margin: 0 0 20px;
   font-family: 'Poppins';
   font-style: normal;
   line-height: 32px;
@@ -7,15 +8,10 @@
 }
 
 .menu-card__title {
+  margin: 0;
   font-weight: 600;
   font-size: 24px;
   text-align: center;
-}
-
-@media screen and (min-width: 768px) {
-  .menu-card__title {
-    text-align: left;
-  }
 }
 
 .menu-card__container {
@@ -25,23 +21,14 @@
   
 }
 
-@media screen and (min-width: 768px) {
-  .menu-card__container {
-    flex-direction: row;
-  }
-}
-
 .menu-card__item {
+  margin: 10px 0 20px;
   font-weight: 400;
   font-size: 18px;
   text-align: center;
 }
 
-@media screen and (min-width: 768px) {
-  .menu-card__item {
-    font-size: 18px;
-  }
-}
+
 
 .menu-card__separator {
   height: 5px;
@@ -50,3 +37,16 @@
   align-self: center;
 }
 
+@media screen and (min-width: 768px) {
+  .menu-card__item {
+    font-size: 18px;
+  }
+
+  .menu-card__container {
+    flex-direction: row;
+  }
+
+  .menu-card__title {
+    text-align: left;
+  }
+}

@@ -1,5 +1,4 @@
 .review-card {
-  min-height: 500px;
   background-color: #3A4574;
   padding: 70px;
   display: flex;
@@ -35,6 +34,15 @@
   color: #FFFFFF;
 }
 
+@media screen and (min-width: 768px) {
+  .review-card {
+    padding: 220px 445px;
+  }
+  .review-card__text {
+    margin: 0 123px 40px;
+  }
+}
+
 .review-card__author {
   margin: 0;
   font-family: 'Poppins';
@@ -43,7 +51,7 @@
   font-size: 24px;
   text-align: center;
 	line-height: 40px;
-  letter-spacing: 24.5%;
+  letter-spacing: 0.23em;
   color: #D3B47F;
   text-transform: uppercase;
 }

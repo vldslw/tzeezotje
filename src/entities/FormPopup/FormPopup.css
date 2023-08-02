@@ -28,12 +28,6 @@
   border-radius: 10px;
 }
 
-@media screen and (min-width: 768px) {
-  .popup__container {
-    width: 430px;
-  }
-}
-
 .popup__close-button {
   position: absolute;
   width: 20px;
@@ -54,29 +48,12 @@
   transition: 0.3s;
 }
 
-@media screen and (min-width: 768px) {
-  .popup__close-button {
-    width: 32px;
-    height: 32px;
-    top: -40px;
-    right: -40px;
-  }
-}
-
 .popup__title {
   margin: 25px 22px 75px;
   font-size: 18px;
   line-height: 22px;
   font-weight: 900;
   color: #000000;
-}
-
-@media screen and (min-width: 768px) {
-  .popup__title {
-    margin: 34px 36px 54px;
-    font-size: 24px;
-    line-height: 23px;
-  }
 }
 
 .popup__form {
@@ -104,15 +81,6 @@
   transition: 0.3s;
 }
 
-@media screen and (min-width: 768px) {
-  .popup__submit-button {
-    margin: 36px;
-    padding: 14px 0 18px;
-    font-size: 16px;
-    line-height: 20px;
-  }
-}
-
 .popup__input {
   margin: 0 22px 30px;
   padding: 0 0 9px;
@@ -130,5 +98,29 @@
 @media screen and (min-width: 768px) {
   .popup__input {
     margin: 0 36px 30px;
+  }
+
+  .popup__container {
+    width: 430px;
+  }
+
+  .popup__close-button {
+    width: 32px;
+    height: 32px;
+    top: -40px;
+    right: -40px;
+  }
+
+  .popup__title {
+    margin: 34px 36px 54px;
+    font-size: 24px;
+    line-height: 23px;
+  }
+
+  .popup__submit-button {
+    margin: 36px;
+    padding: 14px 0 18px;
+    font-size: 16px;
+    line-height: 20px;
   }
 }

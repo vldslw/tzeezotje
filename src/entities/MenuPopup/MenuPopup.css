@@ -37,3 +37,9 @@
   opacity: 0.6;
   transition: opacity 0.3s;
 }
+
+@media screen and (min-width: 768px) {
+  .menu-popup {
+    display: none;
+  }
+}

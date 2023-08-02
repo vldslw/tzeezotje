@@ -24,3 +24,13 @@
 .swiper__button_next {
   background-image: url(./arrow-down.svg);
 }
+
+@media screen and (min-width: 768px) {
+  .swiper__button_prev {
+    margin-left: 375px;
+  }
+  
+  .swiper__button_next {
+    margin-right: 375px;
+  }
+}
