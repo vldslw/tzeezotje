@@ -72,10 +72,10 @@ export const HomePage = () => {
 						</button>
        	 </div>
 					<ul className="header__links">
-						<li className="header__links-item"><a href="https://vldslw.github.io/tzeezotje/" className="header__link"><img src={facebookButton} className="header__link-img" alt="Facebook"/></a></li>
-						<li className="header__links-item"><a href="https://vldslw.github.io/tzeezotje/" className="header__link"><img src={instagramButton} className="header__link-img" alt="Instagram"/></a></li>
-						<li className="header__links-item"><a href="https://vldslw.github.io/tzeezotje/" className="header__link"><img src={twitterButton} className="header__link-img" alt="Twitter"/></a></li>
-						<li className="header__links-item"><a href="https://vldslw.github.io/tzeezotje/" className="header__link"><img src={youtubeButton} className="header__link-img" alt="YouTube"/></a></li>
+						<li className="header__links-item"><a href="https://tzeezotje.onrender.com/" className="header__link"><img src={facebookButton} className="header__link-img" alt="Facebook"/></a></li>
+						<li className="header__links-item"><a href="https://tzeezotje.onrender.com/" className="header__link"><img src={instagramButton} className="header__link-img" alt="Instagram"/></a></li>
+						<li className="header__links-item"><a href="https://tzeezotje.onrender.com/" className="header__link"><img src={twitterButton} className="header__link-img" alt="Twitter"/></a></li>
+						<li className="header__links-item"><a href="https://tzeezotje.onrender.com/" className="header__link"><img src={youtubeButton} className="header__link-img" alt="YouTube"/></a></li>
 					</ul>
 				</div>
 				<FormPopup 
