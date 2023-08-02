@@ -25,7 +25,28 @@
   background-image: url(./arrow-down.svg);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1160px) {
+  .swiper__button_prev {
+    margin-left: 40px;
+  }
+  
+  .swiper__button_next {
+    margin-right: 40px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .swiper__button_prev {
+    margin-left: 80px;
+  }
+  
+  .swiper__button_next {
+    margin-right: 80px;
+  }
+
+}
+
+@media screen and (min-width: 1900px) {
   .swiper__button_prev {
     margin-left: 375px;
   }

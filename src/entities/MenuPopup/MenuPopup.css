@@ -54,7 +54,7 @@
   color: #FFFFFF;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1160px) {
   .menu-popup {
     display: none;
   }

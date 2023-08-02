@@ -145,9 +145,9 @@
   
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1160px) {
   .header {
-    padding: 55px 376px 265px;
+    padding: 55px 40px 265px;
   } 
 
   .header__logo {
@@ -207,8 +207,30 @@
   }
 
   .menu {
-    padding: 80px 375px 90px;
+    padding: 80px 40px 90px;
     flex-direction:row;
   }
+}
+
+@media screen and (min-width: 1280px) {
+  .header {
+    padding: 55px 80px 265px;
+  } 
+
+  .menu {
+    padding: 80px 80px 90px;
+  }
+
+}
+
+@media screen and (min-width: 1900px) {
+  .header {
+    padding: 55px 376px 265px;
+  } 
+
+  .menu {
+    padding: 80px 375px 90px;
+  }
+
 }
 

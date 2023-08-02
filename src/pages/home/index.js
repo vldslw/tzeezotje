@@ -123,7 +123,7 @@ export const HomePage = () => {
 					</div>
 				</section>
 				<section className="clients" aria-label="Client reviews section">
-					<Swiper
+					<Swiper 
 						modules={[Navigation, Pagination]}
       			spaceBetween={0}
       			slidesPerView={1}

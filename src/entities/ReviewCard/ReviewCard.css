@@ -34,9 +34,9 @@
   color: #FFFFFF;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1160px) {
   .review-card {
-    padding: 220px 445px;
+    padding: 220px 150px;
   }
   .review-card__text {
     margin: 0 123px 40px;
@@ -54,4 +54,11 @@
   letter-spacing: 0.23em;
   color: #D3B47F;
   text-transform: uppercase;
+}
+
+
+@media screen and (min-width: 1900px) {
+  .review-card {
+    padding: 220px 445px;
+  }
 }
