@@ -15,7 +15,7 @@ export const submitReserve = async ({name, email, size}) => {
   if (response.ok) {
 		res = response.json();
 	} else {
-		return Promise.reject(`Ошибка: ${res.status}`);
+		return Promise.reject(`Error: ${res.status}`);
 	}
 	return res;
 };

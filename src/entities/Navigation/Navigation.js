@@ -2,7 +2,7 @@ import './Navigation.css';
 import { Link } from 'react-router-dom'; 
 
 
-export const Navigation = ({isMenuPopupOpen, handleMenuClick}) => {
+export const NavMenu = ({isMenuPopupOpen, handleMenuClick}) => {
 
 	return (
     <nav className="header__nav">

@@ -7,10 +7,15 @@ import instagramButton from './icons/igButton.svg';
 import twitterButton from './icons/twButton.svg';
 import youtubeButton from './icons/ytButton.svg';
 import { useState } from "react"; 
-import { Navigation } from '../../entities/Navigation/Navigation';
+import { NavMenu } from '../../entities/Navigation/Navigation';
 import { MenuPopup } from '../../entities/MenuPopup/MenuPopup';
 import { FormPopup } from '../../entities/FormPopup/FormPopup'
 import { submitReserve } from '../../shared/api/submitreserve';
+import { ReviewCard } from '../../entities/ReviewCard/ReviewCard';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination } from 'swiper/modules';
+import { SwiperNavButtons } from '../../entities/SwiperNavButtons/SwiperNavButtons';
+import 'swiper/css/bundle';
 
 export const HomePage = () => {
 
@@ -45,7 +50,7 @@ export const HomePage = () => {
 			<header className="header">
 				<section className="header__nav-bar">
 					<img className="header__logo" src={logo} alt="Tzeezotje logo"/>
-					<Navigation 
+					<NavMenu 
 					isMenuPopupOpen={isMenuPopupOpen} 
 					handleMenuClick={handleMenuClick}
 					/>
@@ -83,6 +88,29 @@ export const HomePage = () => {
 			  <section className="menu" aria-label="Menu section">
 				</section>
 				<section className="clients" aria-label="Client reviews section">
+					<Swiper
+						modules={[Navigation, Pagination]}
+      			spaceBetween={0}
+      			slidesPerView={1}
+      			onSlideChange={() => console.log('slide change')}
+      			onSwiper={(swiper) => console.log(swiper)}
+    			>
+      			<SwiperSlide>
+							<ReviewCard 
+							title={'Goede service, lekker eten, toffe ambiance'}
+							text={'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo  dolores et ea rebum. Stet clita kasd gubergren.'}
+							author={'Alain Heyndrickx'}
+							/>
+						</SwiperSlide>
+      			<SwiperSlide>
+							<ReviewCard 
+							title={'Toffe ambiance, lekker eten, goede service'}
+							text={'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo  dolores et ea rebum. Stet clita kasd gubergren.'}
+							author={'Heyndrickx Alain'}
+							/>
+						</SwiperSlide>
+						<SwiperNavButtons />
+    			</Swiper>
 				</section>
 			</main>
 		</div>
